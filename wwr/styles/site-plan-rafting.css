@@ -9,9 +9,9 @@
     --heading-font: 'Comorant Garamond', serif;
     --paragraph-font: 'Lora', serif;
 
-    --nav-background-color: #f5f5f4;
+    --nav-background-color: #aac4ef;
     --nav-link-color: #405c93;
-    --nav-hover-link-color: #405c93;
+    --nav-hover-link-color: #f5f5f4;
     --nav-hover-background-color: #ff8336;
 }
 
@@ -25,19 +25,13 @@ body {
     margin: 0 auto;
 }
 
-main {
-    accent-color: var(--accent1-color);
-    flood-color: #405c93;
-    background-color: var(--secondary-color);
-}
-
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--secondary-color);
 }
 header {
     padding: 20px;
-    background-color: #f5f5f4;
+    background-color: var(--accent2-color);
 }
 p{
     padding: 25px;
@@ -45,7 +39,7 @@ p{
 nav {
     background-color: var(--nav-background-color);
     font-size: 1.2rem;
-    display: felx;
+    display: flex;
 }
 nav a {
     display: block;
