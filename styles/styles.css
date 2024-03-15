@@ -58,3 +58,8 @@ footer {
     background-color: #eee;
     color: #333;
 }
+/* Main element paragraph style*/
+.callout {
+    margin: 1rem;
+    color: #333;
+}
