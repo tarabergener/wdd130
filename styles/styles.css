@@ -33,6 +33,7 @@ main {
 aside {
     width: 20rem;
     text-align: center;
+    position: relative;
 }
 aside img {
     width: 200px;
@@ -40,8 +41,8 @@ aside img {
 }
 aside h2 {
     position: absolute;
-    top: 285px;
-    left: 118px;
+    top: 20px;
+    left: 100px;
     color: #eee;
 }
 footer {
