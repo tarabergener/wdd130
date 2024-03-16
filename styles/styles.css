@@ -39,6 +39,7 @@ aside img {
     width: 200px;
     height: auto;
 }
+/*Overlapping words over image*/
 aside h2 {
     position: absolute;
     top: 20px;
