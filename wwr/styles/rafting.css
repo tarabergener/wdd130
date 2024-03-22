@@ -44,3 +44,9 @@ article {
 article img {
     float: right;
 }
+header {
+    display: grid;
+}
+nav {
+    display: flex;
+}
