@@ -7,6 +7,10 @@
     display: grid;
     align-items: center;
 }
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
 nav {
     background-color: steelblue;
     padding: 10px;
@@ -29,6 +33,8 @@ h1 {
 p {
     padding: 0;
 }
+/* aside elements grouped */
+/* aside section in column 1/row 1 of grid */
 aside {
     width: 20rem;
     position: relative;
@@ -40,14 +46,14 @@ aside img {
     height: auto;
     padding: 10px;
 }
-/*Overlapping words over image*/
+/* Overlapping header over image */
 aside h2 {
     position: absolute;
     top: 50px;
     left: 100px;
     color: #333;
 }
-/* Class Selectors for aside element*/
+/* boxes for aside element and links */
 .box {
     margin: 1rem;
     padding: 1.5rem;
@@ -55,7 +61,8 @@ aside h2 {
     background-color: #eee;
     color: #333;
 }
-main{
+/* main elements grouped */
+main {
     grid-column: 3;
     margin: 1rem;
     max-width: 450px;
@@ -69,15 +76,12 @@ main img {
     box-shadow: 0 0 30px gray;
     float: right;
 }
-/* Main element paragraph style*/
+/* main element paragraph style */
 .callout {
     margin: 1.5rem;
     color: #333;
 }
-header, .grid, footer {
-    max-width: 840px;
-    margin: 0 auto;
-}
+/* footer element attributes */
 footer {
     margin-top: 25px;
     border-top: 2px solid #000;
