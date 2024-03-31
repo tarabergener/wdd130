@@ -13,6 +13,11 @@
     --nav-link-color: #405c93;
     --nav-hover-link-color: #f5f5f4;
     --nav-hover-background-color: #f5a472;
+}
+
+header {
+    display: grid;
+}
 
 section {
     margin: 15px;
@@ -20,7 +25,6 @@ section {
 }
 
 nav {
-    background-color: #f5a472;
     display: flex;
     float: right;
     padding: 15px;
@@ -40,45 +44,30 @@ nav a {
     padding: 1.5rem;
     margin: 60px;
     background-color: #eee;
-}
-
-h1 {
-    font-size: 40px;
     position: absolute;
-    top: 280px;
-    left: 600px
 }
 
 h2, h3, h4, h5, h6 {
-    grid-column: 3;
     font-family: var(--heading-font);
     color: var(--secondary-color);
     text-align: center;
-}
-
-article {
-    position: absolute;
-    top: 400px;
-    left: 100px;
-    right: 100px;
-    background-color: #405c93;
-    opacity: 75%;
-}
-
-article img {
-    float: right;
 }
 
 p {
     font-family: var(--paragraph-font);
     height: auto;
     padding: 20px;
-    text-align: center;
 }
 
 .hero {
-    grid-column-start: 1;
-    grid-column-end: 6;
+    margin: 15px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    top: 250px;
+    text-align: center;
 }
 
 article {
@@ -103,9 +92,12 @@ header {
     margin: 15px;
 }
 
-.grid-container {
+img {
+    justify-content: space-between;
+}
+
+.employee {
     display: flex;
-    font-size: small;
     justify-content: space-between;
 }
 
@@ -121,61 +113,3 @@ footer {
     display: flex;
     width: 100%;
 }
-
-form {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-}
-
-fieldset {
-    grid-column-start: 2;
-    grid-column-end: 5;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    background-color: aliceblue;
-    border: none;
-    border-radius: 0.5rem;
-}
-
-label {
-    text-align: left;
-    padding: 10px;
-    font-family: var(--paragraph-font);
-    font-size: 20px;
-}
-
-textarea, input, select {
-    font-size: 20px;
-    margin-right: 50px;
-    margin-left: 50px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-}
-
-textarea {
-    text-align: left;
-}
-
-button {
-    grid-column: 3;
-    grid-row: 4;
-    width: 100%;
-    height: 30px;
-    background-color: #968cf0;
-    font-family: var(--paragraph-font);
-    font-size: 20px;
-    border-radius: 0.5rem;
-    margin: 10px;
-}
-
-button:hover {
-    background-color: rgb(195, 195, 228);
-}
-
-footer {
-    text-align: center;
-    margin: 50px;
-}
-
