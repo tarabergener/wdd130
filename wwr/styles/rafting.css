@@ -16,17 +16,16 @@
 }
 
 section {
-    margin: 15px;
     font-size: x-large;
+
 }
 
 nav {
-    background-color: #f5a472;
+    background-color: var(--accent1-color);
     display: flex;
+    position: relative;
     float: right;
-    padding: 15px;
-    margin-top: 70px;
-    margin-right: 25px;
+    padding: 1px;
 }
 
 nav a {
@@ -52,7 +51,6 @@ h1 {
 }
 
 h2, h3, h4, h5, h6 {
-    grid-column: 3;
     font-family: var(--heading-font);
     color: var(--secondary-color);
     text-align: center;
@@ -171,7 +169,7 @@ button {
     margin: 10px;
 }
 
-button:hover {
+button:hover, .button:hover {
     background-color: rgb(195, 195, 228);
 }
 
@@ -185,11 +183,9 @@ footer {
 }
 
 /* trips page css content */
-.trip-item {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 75%;
+
+.trips {
+    display: flex;
 }
 
 .button {
@@ -197,9 +193,46 @@ footer {
     background-color: #405c93;
     color: white;
     padding: 15px;
-    border-radius: 5px;   
+    border-radius: 5px;
+    text-align: center;
+    grid-column: 2;
+    margin: auto;
 }
 
-.button:hover {
-    background-color: rgb(195, 195, 228);
+figcaption {
+    padding: 10px;
 }
+
+table, th, tr, td {
+    border: 1px solid;
+    text-align: center;
+    font-size: large;
+    padding: 7px;
+    margin: auto;
+}
+
+.table-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+    grid-template-rows: repeat(1, 1fr); 
+}
+
+.table-item {
+    grid-column: 2;
+}
+
+table {
+    grid-column: 2;
+    margin-bottom: 50px;
+}
+
+th {
+    background-color: #e9ccba;
+    padding: 20px;
+    font-size: 20px;
+}
+
+tfoot {
+    background-color: #b8d0f5;
+}
+
