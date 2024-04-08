@@ -189,5 +189,17 @@ footer {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 75%;
+}
+
+.button {
+    text-decoration: none;
+    background-color: #405c93;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;   
+}
+
+.button:hover {
+    background-color: rgb(195, 195, 228);
 }
