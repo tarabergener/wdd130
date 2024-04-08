@@ -54,6 +54,13 @@ h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--secondary-color);
     text-align: center;
+    padding-top: 15px;
+    padding-bottom: 0;
+}
+
+h2 {
+    font-size: 35px;
+    margin-top: 50px;
 }
 
 article {
@@ -72,8 +79,9 @@ article img {
 p {
     font-family: var(--paragraph-font);
     height: auto;
-    padding: 20px;
     text-align: center;
+    font-size: 22px;
+
 }
 
 .hero {
@@ -127,15 +135,23 @@ form {
     grid-template-rows: repeat(2, 1fr);
 }
 
+form>h2, form>h3 {
+    grid-column: 3;
+}
+
+.form {
+    margin-bottom: 0;
+}
+
 fieldset {
     grid-column-start: 2;
     grid-column-end: 5;
     text-align: center;
     display: flex;
     flex-direction: column;
-    background-color: aliceblue;
     border: none;
     border-radius: 0.5rem;
+    background-color: aliceblue;
 }
 
 label {
@@ -166,7 +182,7 @@ button {
     font-family: var(--paragraph-font);
     font-size: 20px;
     border-radius: 0.5rem;
-    margin: 10px;
+    margin: 20px;
 }
 
 button:hover, .button:hover {
@@ -197,6 +213,7 @@ footer {
     text-align: center;
     grid-column: 2;
     margin: auto;
+    margin-bottom: 15px;
 }
 
 figcaption {
@@ -236,3 +253,9 @@ tfoot {
     background-color: #b8d0f5;
 }
 
+/* home page css content */
+.heading {
+    font-size: 65px;
+    position: absolute;
+    margin-left: 175px;
+}
